@@ -14,4 +14,4 @@ Then, go into the template directory and install the template.
 # How to use the template once it's installed
 
 If you run this command it will automatically setup your next NPM package!
-`emt gen babel-npm`
+`emt gen babel`
