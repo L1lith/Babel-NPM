@@ -1,0 +1,35 @@
+<% const name = (args.name || require('path').basename(location.parentFolder)).toLowerCase().trim().replace(/[\s]+/g, '-')%>
+{
+  "name": "<%= name %>",
+  "version": "<%=args.version || "0.0.1"%>",
+  "description": "<%=args.description || ""%>",
+  "main": "./dist/<%= name %>.js",
+  "source": "./source/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "microbundle": "^0.13.0",
+    "mocha": "^8.2.1",
+    "chai": "^4.2.0",
+    "cross-env": "^7.0.3"
+  },
+  "scripts": {
+      
+    "build": "rm -rf dist && mkdir dist && cross-env NODE_ENV=production babel source -d dist",
+    "dev": "rm -rf dist && mkdir dist && babel source -d dist --watch",
+    "test": "mocha \"tests/allTests/**/*.js\"",
+    "pretty": "prettier --write \"./**/*.js\"",
+    "prepub": "npm run build && npm run test && cp package.json dist && cp LICENSE.md dist && cp README.md dist && json -f dist/package.json -I -e 'delete this.bin; delete this.scripts; delete this.devDependencies;'",
+    "pub": "cd dist && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L1lith/Liliths-Templates.git"
+  },
+  "files": [
+    "/dist/<%= name %>.js",
+    "/dist/<%= name %>.js.map"
+  ],
+  "keywords": [],
+  "author": "<%=(args.author || require("os").userInfo().username || "").trim().toUpperCase()%>",
+  "license": "<%=(args.license || "MIT").trim().toUpperCase()%>"
+}
