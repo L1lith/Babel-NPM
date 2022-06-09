@@ -2,7 +2,7 @@
 
 Just copy & paste this command to initialize this template
 
-`npx emt gen https://github.com/L1lith/Babel-Template`
+`npx emerald-templates gen https://github.com/L1lith/Babel-Template`
 
 ## Bonus: Install Locally
 
