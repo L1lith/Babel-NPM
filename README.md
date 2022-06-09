@@ -1,17 +1,9 @@
-# How to install this template?
+# How to use this template
 
-First, install [Emerald Templates](https://github.com/L1lith/Emerald-Templates)
+Just copy & paste this command to initialize this template
 
-`npm install -g emerald-templates`
+`npx emt gen https://github.com/L1lith/Babel-Template`
 
-Next, clone this template on your computer (you can clone it into any directory)
+## Bonus: Install Locally
 
-`git clone https://github.com/L1lith/Babel-NPM`
-
-Then, go into the template directory and install the template.
-`cd Babel-NPM && emt addTemplate .`
-
-# How to use the template once it's installed
-
-If you run this command it will automatically setup your next NPM package!
-`emt gen babel`
+If you'd like to see how to install Babel-Template locally, please see [here](https://github.com/L1lith/Babel-Template/Install.md)
