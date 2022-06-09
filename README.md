@@ -6,4 +6,4 @@ Just copy & paste this command to initialize this template
 
 ## Bonus: Install Locally
 
-If you'd like to see how to install Babel-Template locally, please see [here](https://github.com/L1lith/Babel-Template/Install.md)
+If you'd like to see how to install Babel-Template locally, please see [here](https://github.com/L1lith/Babel-Template/blob/master/Installation.md)
