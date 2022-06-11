@@ -4,12 +4,9 @@ First, install [Emerald Templates](https://github.com/L1lith/Emerald-Templates)
 
 `npm install -g emerald-templates`
 
-Next, clone this template on your computer (you can clone it into any directory)
+Next, make sure you're in the folder you'd like to save the template to, then run the following command:
 
-`git clone https://github.com/L1lith/Babel-NPM`
-
-Then, go into the template directory and install the template.
-`cd Babel-NPM && emt addTemplate .`
+`emt install https://github.com/L1lith/Babel-Template`
 
 # How to use the template once it's installed
 
